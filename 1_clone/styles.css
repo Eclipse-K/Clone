@@ -1,0 +1,72 @@
+header {
+  position: sticky;
+  width: 100%;
+}
+
+.navigation {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-top {
+  display: flex;
+  width: 85%;
+}
+
+.nav-top-ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-top-li {
+  border: 1px solid black;
+  padding: 10px 60px;
+}
+
+.nav-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 100px;
+  align-items: center;
+}
+
+.search {
+  border: 1px solid black;
+}
+
+.sns-area {
+  border: 1px solid black;
+}
+
+.nav-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  margin-top: 10px;
+}
+
+.nav-bottom-ul {
+  display: flex;
+  width: 85%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-bottom-li {
+  font-size: 22px;
+}
