@@ -60,7 +60,7 @@ header {
 .nav-bottom-ul {
   display: flex;
   width: 85%;
-  height: 50px;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
   list-style: none;
@@ -69,4 +69,56 @@ header {
 
 .nav-bottom-li {
   font-size: 22px;
+}
+
+.nav-bottom-drop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #31312e;
+  border-style: none;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.nav-drop-icon {
+  position: relative;
+  display: block;
+  background-color: #31312e;
+  border-style: none;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.nav-drop-icon:hover .nav-span-line:nth-of-type(2),
+.nav-drop-icon:hover .nav-span-line:nth-of-type(3) {
+  width: 30px;
+}
+
+.nav-span-line {
+  position: absolute;
+  display: block;
+  background-color: #ffffff;
+  height: 2px;
+  right: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-span-line:first-child {
+  top: 0;
+  width: 30px;
+}
+
+.nav-span-line:nth-of-type(2) {
+  top: 10px;
+  width: 20px;
+}
+
+.nav-span-line:nth-of-type(3) {
+  top: 20px;
+  bottom: 0;
+  width: 10px;
 }
