@@ -158,3 +158,53 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+#calendar-container {
+  height: 250px;
+}
+
+.calendar {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.days {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.day {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #c77777;
+  color: #ffffff;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 10px;
+  display: inline-block;
+}
