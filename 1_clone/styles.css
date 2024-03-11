@@ -159,6 +159,8 @@ header {
   align-items: center;
 }
 
+/* 캘린더 */
+
 #calendar-container {
   height: 250px;
 }
@@ -198,6 +200,11 @@ header {
   color: #ffffff;
 }
 
+.day.today {
+  background-color: #c77777;
+  color: #fff;
+}
+
 .empty {
   visibility: hidden;
 }
@@ -207,4 +214,26 @@ header {
   font-size: 20px;
   margin: 0 10px;
   display: inline-block;
+}
+
+/* 전체행사 */
+
+/* 여기에 필요한 스타일 추가 */
+.tabs {
+  display: flex;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.content {
+  display: none;
+}
+
+/* media */
+@media all and (max-width: 1023px) {
+  .nav-top {
+    display: none;
+  }
 }

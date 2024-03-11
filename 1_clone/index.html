@@ -55,6 +55,7 @@
       </div>
     </section>
 
+    <!-- 주요 알림 -->
     <section>
       <div class="notify">
         <div class="notify-title">주요알림</div>
@@ -62,6 +63,7 @@
       </div>
     </section>
 
+    <!-- 문화달력 -->
     <section>
       <div>
         <h3>문화달력</h3>
@@ -69,7 +71,47 @@
       </div>
     </section>
 
+    <!-- 전체행사 -->
+    <section>
+      <div class="tabs">
+        <button onclick="showContent('eventsTab')">행사</button>
+        <button onclick="showContent('performancesTab')">공연</button>
+        <button onclick="showContent('exhibitionsTab')">전시</button>
+        <button onclick="showContent('experiencesTab')">체험</button>
+        <button onclick="showContent('educationTab')">교육</button>
+      </div>
+
+      <div id="eventsTab" class="content">
+        <!-- 행사에 대한 내용 -->
+        <p>행사 내용을 여기에 추가하세요.</p>
+      </div>
+
+      <div id="performancesTab" class="content">
+        <!-- 공연에 대한 내용 -->
+        <p>공연 내용을 여기에 추가하세요.</p>
+      </div>
+
+      <div id="exhibitionsTab" class="content">
+        <!-- 전시에 대한 내용 -->
+        <p>전시 내용을 여기에 추가하세요.</p>
+      </div>
+
+      <div id="experiencesTab" class="content">
+        <!-- 체험에 대한 내용 -->
+        <p>체험 내용을 여기에 추가하세요.</p>
+      </div>
+
+      <div id="educationTab" class="content">
+        <!-- 교육에 대한 내용 -->
+        <p>교육 내용을 여기에 추가하세요.</p>
+      </div>
+    </section>
+
+    <!-- 전체행사 -->
+    <!-- 공지, 보도, 입찰, 채용 -->
+
     <script src="./Slide.js"></script>
     <script src="./calender.js"></script>
+    <script src="./showContent.js"></script>
   </body>
 </html>
