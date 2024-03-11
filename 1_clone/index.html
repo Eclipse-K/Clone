@@ -74,34 +74,60 @@
     <!-- 전체행사 -->
     <section>
       <div class="tabs">
-        <button onclick="showContent('eventsTab')">행사</button>
-        <button onclick="showContent('performancesTab')">공연</button>
-        <button onclick="showContent('exhibitionsTab')">전시</button>
-        <button onclick="showContent('experiencesTab')">체험</button>
-        <button onclick="showContent('educationTab')">교육</button>
+        <div onclick="showContent('eventsTab')" class="tab" id="eventsTab">
+          행사
+        </div>
+        <div
+          onclick="showContent('performancesTab')"
+          class="tab"
+          id="performancesTab"
+        >
+          공연
+        </div>
+        <div
+          onclick="showContent('exhibitionsTab')"
+          class="tab"
+          id="exhibitionsTab"
+        >
+          전시
+        </div>
+        <div
+          onclick="showContent('experiencesTab')"
+          class="tab"
+          id="experiencesTab"
+        >
+          체험
+        </div>
+        <div
+          onclick="showContent('educationTab')"
+          class="tab"
+          id="educationTab"
+        >
+          교육
+        </div>
       </div>
 
-      <div id="eventsTab" class="content">
+      <div id="eventsTab-content" class="content">
         <!-- 행사에 대한 내용 -->
         <p>행사 내용을 여기에 추가하세요.</p>
       </div>
 
-      <div id="performancesTab" class="content">
+      <div id="performancesTab-content" class="content">
         <!-- 공연에 대한 내용 -->
         <p>공연 내용을 여기에 추가하세요.</p>
       </div>
 
-      <div id="exhibitionsTab" class="content">
+      <div id="exhibitionsTab-content" class="content">
         <!-- 전시에 대한 내용 -->
         <p>전시 내용을 여기에 추가하세요.</p>
       </div>
 
-      <div id="experiencesTab" class="content">
+      <div id="experiencesTab-content" class="content">
         <!-- 체험에 대한 내용 -->
         <p>체험 내용을 여기에 추가하세요.</p>
       </div>
 
-      <div id="educationTab" class="content">
+      <div id="educationTab-content" class="content">
         <!-- 교육에 대한 내용 -->
         <p>교육 내용을 여기에 추가하세요.</p>
       </div>

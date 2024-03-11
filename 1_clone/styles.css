@@ -218,13 +218,18 @@ header {
 
 /* 전체행사 */
 
-/* 여기에 필요한 스타일 추가 */
 .tabs {
   display: flex;
 }
 
-button {
+.tab {
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.tab.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .content {
