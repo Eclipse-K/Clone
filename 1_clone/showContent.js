@@ -3,8 +3,7 @@ var activeTabId = "eventsTab";
 function showContent(tabId) {
   // 현재 활성화된 탭의 스타일 초기화
   document.getElementById(activeTabId).classList.remove("active");
-  document.getElementById(activeTabId).style.fontWeight = "normal";
-  document.getElementById(activeTabId).style.textDecoration = "none";
+  // document.getElementById(activeTabId).style.fontWeight = "normal";
 
   // 현재 활성화된 탭의 컨텐츠 숨김
   var activeContent = document.getElementById(activeTabId + "-content");
@@ -16,8 +15,7 @@ function showContent(tabId) {
   var selectedTab = document.getElementById(tabId);
   if (selectedTab) {
     selectedTab.classList.add("active");
-    selectedTab.style.fontWeight = "bold";
-    selectedTab.style.textDecoration = "underline";
+    // selectedTab.style.fontWeight = "bold";
 
     var selectedContent = document.getElementById(tabId + "-content");
     if (selectedContent) {
@@ -28,3 +26,5 @@ function showContent(tabId) {
     activeTabId = tabId;
   }
 }
+// 페이지 로딩 시 eventsTab-content를 기본으로 활성화
+showContent("eventsTab");

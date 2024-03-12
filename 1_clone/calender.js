@@ -1,5 +1,11 @@
-let currentYear = 2024;
-let currentMonth = 3;
+let currentYear;
+let currentMonth;
+
+function initializeDate() {
+  const today = new Date();
+  currentYear = today.getFullYear();
+  currentMonth = today.getMonth();
+}
 
 function createCalendar(year, month) {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -54,7 +60,7 @@ function changeMonth(direction) {
   updateCalendar();
 }
 
-// 사용 예시
+initializeDate();
 const calendarContainer = document.getElementById("calendar-container");
 const yearMonthContainer = document.createElement("div");
 

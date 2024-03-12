@@ -162,7 +162,8 @@ header {
 /* 캘린더 */
 
 #calendar-container {
-  height: 250px;
+  position: relative;
+  height: 150px;
 }
 
 .calendar {
@@ -223,13 +224,44 @@ header {
 }
 
 .tab {
-  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  width: 80px;
+  height: 42px;
+  border-bottom: 2px solid transparent;
+  font-size: 1.25em;
 }
 
 .tab.active {
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+
+#eventsTab.active {
   font-weight: bold;
-  text-decoration: underline;
+  border-bottom: 2px solid #c77777; /* eventsTab이 활성화된 경우 보더 색상을 red로 설정 */
+}
+
+#performancesTab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #9d8c90; /* performancesTab이 활성화된 경우 보더 색상을 blue로 설정 */
+}
+
+#exhibitionsTab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #8a9a38; /* exhibitionsTab이 활성화된 경우 보더 색상을 green으로 설정 */
+}
+
+#experiencesTab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #d8c55f; /* experiencesTab이 활성화된 경우 보더 색상을 orange로 설정 */
+}
+
+#educationTab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #bb9b72; /* educationTab이 활성화된 경우 보더 색상을 purple로 설정 */
 }
 
 .content {
