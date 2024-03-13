@@ -322,6 +322,46 @@ header {
   width: 100%;
 }
 
+/* 행사 스케치 */
+.skecth-section {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.skecth-area {
+  width: 60%;
+}
+
+.skecth-title-box,
+.panel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.skecth-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.panel-area {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.sub-panel-area {
+  width: 100%;
+}
+
+.panel-Logo {
+  width: 5rem;
+  height: 2.5rem;
+}
+
 /* media */
 @media all and (max-width: 1023px) {
   .nav-top {
