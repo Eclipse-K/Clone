@@ -218,15 +218,14 @@
       <div class="mall-container">
         <div class="mall-title">
           <h3>KHmall</h3>
+          <p>
+            전통문화의 가치와 아름다움을 일상에서 향유할 수 있는 전통문화상품
+          </p>
           <a class="mall-more">
             <img src="./images/more_plus.png" alt="more_plus" />
           </a>
         </div>
-        <div class="mall-title-p">
-          <p>
-            전통문화의 가치와 아름다움을 일상에서 향유할 수 있는 전통문화상품
-          </p>
-        </div>
+
         <div class="mall-box">
           <div class="mall-box-image">
             <img src="" alt="Blank-image" />
@@ -243,32 +242,58 @@
                 </p>
               </a>
             </div>
-          </div>
-          <div class="mall-tab">
-            <a>인기상품</a>
-            <a>신상품</a>
-          </div>
-          <div class="mall-content">
-            <ul class="mall-content-list">
-              <li>
-                <a href="#" target="_blank" title="새창으로 열립니다.">
-                  <img src="" alt="Blank-image" />
-                  <p>Blank-image</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="새창으로 열립니다.">
-                  <img src="" alt="Blank-image" />
-                  <p>Blank-image</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="새창으로 열립니다.">
-                  <img src="" alt="Blank-image" />
-                  <p>Blank-image</p>
-                </a>
-              </li>
-            </ul>
+            <div class="mall-tab">
+              <a href="#" class="tab-link active" data-tab="popular"
+                >인기상품</a
+              >
+              <a href="#" class="tab-link" data-tab="new">신상품</a>
+            </div>
+
+            <div id="popular" class="mall-content active">
+              <ul class="mall-content-list">
+                <li>
+                  <a href="#" target="_blank" title="새창으로 열립니다.">
+                    <img src="" alt="Blank-image" />
+                    <p>Blank-image</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창으로 열립니다.">
+                    <img src="" alt="Blank-image" />
+                    <p>Blank-image</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창으로 열립니다.">
+                    <img src="" alt="Blank-image" />
+                    <p>Blank-image</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="new" class="mall-content">
+              <ul class="mall-content-list">
+                <li>
+                  <a href="#" target="_blank" title="새창으로 열립니다.">
+                    <img src="" alt="Blank-image" />
+                    <p>Blank-image</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창으로 열립니다.">
+                    <img src="" alt="Blank-image" />
+                    <p>Blank-image</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" title="새창으로 열립니다.">
+                    <img src="" alt="Blank-image" />
+                    <p>Blank-image</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -277,5 +302,6 @@
     <script src="./Slide.js"></script>
     <script src="./calender.js"></script>
     <script src="./showContent.js"></script>
+    <script src="./mall.js"></script>
   </body>
 </html>
