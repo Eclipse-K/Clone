@@ -386,6 +386,8 @@ header {
   position: relative;
   background: #f9f5f4;
   display: flex;
+  width: 100%;
+  height: 300px;
 }
 
 .mall-box-image {
@@ -400,7 +402,14 @@ header {
   text-align: center;
 }
 
+.mall-box-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .mall-area-title {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -445,10 +454,19 @@ header {
 
 .mall-tab a {
   position: relative;
-  padding: 0 0 8px 0;
+  padding: 0 0 5px 0;
+  margin-right: 15px;
   font-weight: 500;
   text-decoration: none;
   color: #333;
+}
+
+.mall-tab a[data-tab="popular"]::after {
+  background-color: #c77777;
+}
+
+.mall-tab a[data-tab="new"]::after {
+  background-color: #9c8c8f;
 }
 
 .mall-tab a::after {
@@ -456,7 +474,6 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #007bff;
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -472,7 +489,16 @@ header {
 }
 
 .mall-content.active {
-  display: block;
+  display: flex;
+}
+
+.mall-content-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 30px;
 }
 
 /* media */
