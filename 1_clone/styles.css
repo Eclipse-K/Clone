@@ -375,11 +375,13 @@ header {
 
 .mall-title h3 {
   font-size: 35px;
+  margin: 15px 0 15px 0;
 }
 
 .mall-title p {
   width: 100%;
   padding-left: 20px;
+  margin: 15px 0 15px 0;
 }
 
 .mall-box {
@@ -387,18 +389,18 @@ header {
   background: #f9f5f4;
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .mall-box-image {
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .mall-box-image img {
-  width: 100%;
+  width: 250px;
   text-align: center;
 }
 
@@ -406,6 +408,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 65%;
 }
 
 .mall-area-title {
@@ -415,7 +418,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
 }
 
 .mall-area-title a {
@@ -450,6 +452,7 @@ header {
 
 .mall-tab {
   position: relative;
+  display: flex;
 }
 
 .mall-tab a {
@@ -490,15 +493,34 @@ header {
 
 .mall-content.active {
   display: flex;
+  justify-content: center;
 }
 
 .mall-content-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 30px;
+  gap: 0 10px;
+}
+
+.mall-content-list img {
+  width: 100%;
+  height: 150px;
+}
+
+.mall-content-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.mall-content-list p {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 15px;
 }
 
 /* media */
