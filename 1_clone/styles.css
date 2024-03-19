@@ -523,6 +523,54 @@ header {
   font-size: 15px;
 }
 
+/* k-list */
+.k-list-container {
+  position: relative;
+  height: 250px;
+}
+
+.k-list-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.k-list {
+  list-style-type: none;
+  width: 150px;
+  height: 150px;
+}
+
+.k-list img {
+  width: 150px;
+  height: 150px;
+}
+
+.k-list p {
+  text-align: center;
+  color: #333;
+}
+
+/* k-culture */
+.kculture-area {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url(./images/k-culture1.png) center no-repeat;
+  background-size: cover;
+  border: 1px solid #dbdbdb;
+}
+
+.chf-area {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url(./images/k-culture2.png) center no-repeat;
+  background-size: cover;
+  border: 1px solid #dbdbdb;
+  margin-top: 20px;
+}
 /* media */
 @media all and (max-width: 1023px) {
   .nav-top {
