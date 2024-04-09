@@ -325,7 +325,14 @@ header {
 /* 행사 스케치 */
 .skecth-section {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skecth-container {
+  display: flex;
+  width: 1300px;
+  height: 300px;
   gap: 20px;
 }
 
@@ -410,10 +417,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 
 .mall-box-image img {
-  width: 100%;
+  width: 450px;
   height: 350px;
   text-align: center;
 }
@@ -572,10 +580,17 @@ header {
 
 /* k-culture */
 .k-culture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.k-culture-sub {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  width: 1300px;
 }
 
 .kculture-area {
