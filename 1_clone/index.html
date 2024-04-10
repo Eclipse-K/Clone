@@ -134,31 +134,25 @@
     </section>
     <!-- 공지, 보도, 입찰, 채용 -->
     <section class="news">
-      <div class="news-container">
-        <div class="news-box">
-          <div class="news-title">
-            <h4>
-              <a>공지사항</a>
-            </h4>
-          </div>
-          <div class="news-title">
-            <h4>
-              <a>보도자료</a>
-            </h4>
-          </div>
-          <div class="news-title">
-            <h4>
-              <a>입찰정보</a>
-            </h4>
-          </div>
-          <div class="news-title">
-            <h4>
-              <a>채용정보</a>
-            </h4>
+      <div class="news-sub">
+        <div class="news-container">
+          <div class="news-box">
+            <div class="news-title" onclick="expandTitle(this)">
+              <h4 class="clicked">공지사항</h4>
+            </div>
+            <div class="news-title" onclick="expandTitle(this)">
+              <h4>보도자료</h4>
+            </div>
+            <div class="news-title" onclick="expandTitle(this)">
+              <h4>입찰정보</h4>
+            </div>
+            <div class="news-title" onclick="expandTitle(this)">
+              <h4>채용정보</h4>
+            </div>
           </div>
         </div>
+        <div class="news-content">내용</div>
       </div>
-      <div class="news-content">내용</div>
     </section>
 
     <!-- 행사 스케치 -->
@@ -649,5 +643,6 @@
     <script src="./calender.js"></script>
     <script src="./showContent.js"></script>
     <script src="./mall.js"></script>
+    <script src="./news.js"></script>
   </body>
 </html>
