@@ -219,6 +219,16 @@ header {
 
 /* 전체행사 */
 
+.event-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs-container {
+  width: 1300px;
+}
+
 .tabs {
   display: flex;
 }
