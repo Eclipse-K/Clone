@@ -161,8 +161,19 @@ header {
 
 /* 캘린더 */
 
+.calendar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-box {
+  width: 1300px;
+}
+
 #calendar-container {
   position: relative;
+  width: 1300px;
   height: 150px;
 }
 
