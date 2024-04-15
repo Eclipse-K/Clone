@@ -124,8 +124,14 @@ header {
 }
 
 /* slide */
+.Slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Slide-container {
-  width: 100%;
+  width: 1300px;
   height: 500px;
   border: 1px solid black;
   overflow: hidden;
@@ -136,12 +142,19 @@ header {
   text-align: center;
 }
 
+/* 주요알림 */
+.notify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .notify {
   display: flex;
   border: 1px solid black;
   background: black;
   color: #ffffff;
-  width: 100%;
+  width: 1300px;
   height: 50px;
 }
 
