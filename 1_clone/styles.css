@@ -1,10 +1,8 @@
 header {
-  position: sticky;
   width: 100%;
 }
 
 .navigation {
-  position: sticky;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -44,6 +42,10 @@ header {
   align-items: center;
 }
 
+.hide-on-scroll {
+  display: none;
+}
+
 .search {
   border: 1px solid black;
 }
@@ -61,6 +63,14 @@ header {
   border-top: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
   margin-top: 10px;
+  z-index: 999;
+}
+
+.nav-bottom.fixed {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  background-color: #1f1f1f;
 }
 
 .nav-bottom-ul {
@@ -87,6 +97,10 @@ header {
 .nav-bottom-li-main {
   text-decoration: none;
   color: black;
+}
+
+.nav-bottom-li-main.fixed {
+  color: #fff;
 }
 
 .nav-bottom-drop {
